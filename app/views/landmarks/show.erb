@@ -1,4 +1,4 @@
-<table>
+<!-- <table>
   <tr>
     <th>Name</th>
     <th>Year Completed</th>
@@ -8,3 +8,16 @@
     <td><%= @landmark.year_completed %></td>
   </tr>
 <table>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @landmark.name %></title>
+</head>
+<body>
+  <h1><%= @landmark.name %></h1>
+  <h1>Year Completed: <%= @landmark.year_completed %></h1>
+  <h4><a href="/landmarks/<%= @landmark.id %>/edit">Click here</a> to edit this landmark</h4>
+</body>
+</html>

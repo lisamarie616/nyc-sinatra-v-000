@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Historical Figures</title>
+</head>
+<body>
+  <h1>NYC Historical Figures</h1>
+  <% @figures.each do |figure| %>
+    <a href="/figures/<%= figure.id %>"><%= figure.name %></a><br>
+  <% end %>
+</body>
+</html>

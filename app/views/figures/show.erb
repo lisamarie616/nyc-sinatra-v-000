@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @figure.name %></title>
+</head>
+<body>
+  <h1><%= @figure.name %></h1>
+  <h3>Figure Titles:</h3>
+  <% @figure.titles.each do |title| %>
+    <%= title.name %><br>
+  <% end %>
+  <h3>Figure Landmarks:</h3>
+  <% @figure.landmarks.each do |landmark| %>
+    <%= landmark.name %><br>
+  <% end %>
+  <h4><a href="/figures/<%= @figure.id %>/edit">Click here</a> to edit this figure</h4>
+</body>
+</html>
